@@ -23,6 +23,13 @@
         android:layout_height="wrap_content"
         android:text="@string/name_les_2"
         android:id="@+id/lesson2"
-        android:layout_below="@+id/lesson1"/>
+        />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/name_les_3"
+        android:id="@+id/lesson3"
+       />
 
 </LinearLayout>

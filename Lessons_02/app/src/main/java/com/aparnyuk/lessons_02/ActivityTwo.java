@@ -2,10 +2,14 @@ package com.aparnyuk.lessons_02;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.ImageView;
+import android.widget.LinearLayout;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.math.BigInteger;
 
@@ -39,6 +43,7 @@ public class ActivityTwo extends AppCompatActivity implements View.OnClickListen
     public void onClick(View v) {
         int num;
         String inpNum;
+
         switch (v.getId()) {
             case R.id.btnFact:
                 inpNum = inputFactorial.getText().toString();
