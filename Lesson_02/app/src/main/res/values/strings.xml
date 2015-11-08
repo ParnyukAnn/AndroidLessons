@@ -1,0 +1,61 @@
+<resources>
+    <string name="app_name">Android lessons</string>
+    <string name="name_les_1">Lesson 1</string>
+    <string name="name_les_2">Lesson 2</string>
+    <string name="name_les_3">Lesson 3</string>
+    <string name="name_les_4">Lesson 4</string>
+
+    <string name="title_activity_activity_one">Урок 1. Простая программа</string>
+    <string name="title_activity_activity_two">Урок 2. Фибоначчи и факториал</string>
+    <string name="title_activity_activity_three">Урок 3. Работа с коллекциями</string>
+    <string name="title_activity_activity_four">Урок 4. ООП, фрагменты</string>
+    <string name="title_activity_activity_five">Урок 5. UI, анимация</string>
+
+    <string name="calculate_operation">Вычислить</string>
+    <string name="head_fib">Числа Фибоначчи</string>
+    <string name="head_fact">Факториал</string>
+    <string name="enter_number">Введите номер…</string>
+
+    <string name="bnt_les3_1">1 - вывод в обратном порядке</string>
+    <string name="bnt_les3_2">2 - удалить каждый 3-й</string>
+    <string name="bnt_les3_3">3 - убрать повторы</string>
+    <string name="bnt_les3_4">4 - сортировать по алфавиту</string>
+
+
+    <string name="frag1_text">TextView: Main Fragment</string>
+    <string name="previous_btn">Previous</string>
+    <string name="next_btn">Next</string>
+
+    <string name="previous">TextView: Previous</string>
+    <string name="next">TextView: Next</string>
+    <string name="prev_frag">Previous Fragment</string>
+    <string name="next_frag">Next Fragment</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="name_item1">Урок 1</string>
+    <string name="name_item2">Урок 2</string>
+    <string name="name_item3">Урок 3</string>
+    <string name="name_item4">Урок 4</string>
+    <string name="name_item5">Урок 5</string>
+    <string name="name_item_title">Текущий урок</string>
+
+    <string name="anm_btn_blink">Blink</string>
+    <string name="anm_btn_bounce">Bounce</string>
+    <string name="anm_btn_fade_in">Fade in</string>
+    <string name="anm_btn_fade_out">Fade out</string>
+    <string name="anm_btn_flip">Flip</string>
+    <string name="anm_btn_move">Move</string>
+    <string name="anm_btn_rotate">Rotate</string>
+    <string name="anm_btn_sequential">Sequential</string>
+    <string name="anm_btn_slide_down">Slide down</string>
+    <string name="anm_btn_slide_up">Slide up</string>
+    <string name="anm_btn_together">Together</string>
+    <string name="anm_btn_zoom_in">Zoom out</string>
+    <string name="anm_btn_zoom_out">Zoom in</string>
+    <string name="anm_tv">Animation</string>
+    <string name="anm_btn_cross_fade">Cross fade</string>
+    <string name="anima_tv_text">Replace this Text View</string>
+
+</resources>
