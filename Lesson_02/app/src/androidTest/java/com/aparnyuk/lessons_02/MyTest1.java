@@ -11,14 +11,14 @@ import java.math.BigInteger;
 public class MyTest1 extends TestCase {
     public void testFunc() throws Exception{
        // Test myFactorial function
-        assertEquals(BigInteger.ONE, ActivityTwo.myFactorial(0));
-        assertEquals(BigInteger.valueOf(6), ActivityTwo.myFactorial(3));
-        assertEquals(BigInteger.valueOf(120) ,ActivityTwo.myFactorial(5));
+        assertEquals(BigInteger.ONE, FragmentLesson2.myFactorial(0));
+        assertEquals(BigInteger.valueOf(6), FragmentLesson2.myFactorial(3));
+        assertEquals(BigInteger.valueOf(120) , FragmentLesson2.myFactorial(5));
 
         // Test myFibonacci function
-        assertEquals( BigInteger.ZERO,ActivityTwo.myFibonacci(0));
-        assertEquals(BigInteger.ONE ,ActivityTwo.myFibonacci(1));
-        assertEquals(BigInteger.ONE ,ActivityTwo.myFibonacci(2));
-        assertEquals(BigInteger.valueOf(8) ,ActivityTwo.myFibonacci(6));
+        assertEquals( BigInteger.ZERO, FragmentLesson2.myFibonacci(0));
+        assertEquals(BigInteger.ONE , FragmentLesson2.myFibonacci(1));
+        assertEquals(BigInteger.ONE , FragmentLesson2.myFibonacci(2));
+        assertEquals(BigInteger.valueOf(8) , FragmentLesson2.myFibonacci(6));
     }
 }

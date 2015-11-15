@@ -1,9 +1,13 @@
 package com.aparnyuk.lessons_02;
 
 import android.os.Bundle;
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.support.v7.app.AppCompatActivity;
 import android.text.TextUtils;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -13,25 +17,29 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.LinkedList;
 
-public class ActivityThree extends AppCompatActivity {
+public class FragmentLesson3 extends Fragment {
     private String[] values = new String[]{"Android", "iPhone", "WindowsMobile",
             "Blackberry", "Ubuntu", "Windows7", "Mac OS X", "Linux", "Ubuntu", "Windows7",
             "Mac OS X", "Linux", "Ubuntu", "Windows7", "Android", "iPhone", "WindowsMobile"};
     TextView text2;
-   // private ArrayList<String> list = new ArrayList<>();
+    // private ArrayList<String> list = new ArrayList<>();
+
+    @Nullable
+    @Override
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_lesson3, container, false);
+    }
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_three);
-
+    public void onStart() {
+        super.onStart();
         createAndShowNumbers();
 
-        text2 = (TextView) findViewById(R.id.text_2);
-        findViewById(R.id.button_1).setOnClickListener(clickListener);
-        findViewById(R.id.button_2).setOnClickListener(clickListener);
-        findViewById(R.id.button_3).setOnClickListener(clickListener);
-        findViewById(R.id.button_4).setOnClickListener(clickListener);
+        text2 = (TextView) getActivity().findViewById(R.id.text_2);
+        getActivity().findViewById(R.id.button_1).setOnClickListener(clickListener);
+        getActivity().findViewById(R.id.button_2).setOnClickListener(clickListener);
+        getActivity().findViewById(R.id.button_3).setOnClickListener(clickListener);
+        getActivity().findViewById(R.id.button_4).setOnClickListener(clickListener);
     }
 
     private void createAndShowNumbers() {
@@ -40,7 +48,7 @@ public class ActivityThree extends AppCompatActivity {
             list.add(values[i]);
         }
         String strings = TextUtils.join(", ", list);
-        TextView text1 = (TextView) findViewById(R.id.text_1);
+        TextView text1 = (TextView) getActivity().findViewById(R.id.text_1);
         text1.setText(strings);
     }
 
@@ -64,10 +72,12 @@ public class ActivityThree extends AppCompatActivity {
         }*/
         Iterator<String> it = myList.iterator();
         int i = 0;
-        while(it.hasNext()) {
+        while (it.hasNext()) {
             it.next();
-            if (i==2) {i=0; it.remove();}
-            else i++;
+            if (i == 2) {
+                i = 0;
+                it.remove();
+            } else i++;
         }
 
         String strings = TextUtils.join(", ", myList);
@@ -94,7 +104,7 @@ public class ActivityThree extends AppCompatActivity {
     private View.OnClickListener clickListener = new View.OnClickListener() {
         @Override
         public void onClick(View v) {
-          switch (v.getId()) {
+            switch (v.getId()) {
                 case R.id.button_1:
                     reverseOrder();
                     break;

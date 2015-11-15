@@ -1,16 +1,17 @@
-package com.aparnyuk.lessons_02;
+package com.aparnyuk.lessons_02.Lesson4;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+
+import com.aparnyuk.lessons_02.Lesson4.ShowSomething;
+import com.aparnyuk.lessons_02.R;
 
 public class MainFragment extends Fragment implements View.OnClickListener{
 
@@ -23,7 +24,7 @@ public class MainFragment extends Fragment implements View.OnClickListener{
     private ShowSomething myInterface;
 
     @Override
-    public void onAttach(Activity activity) { //Context
+    public void onAttach(Activity activity) {
         super.onAttach(activity);
         try {
             myInterface = (ShowSomething) activity;

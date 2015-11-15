@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <Button
+        android:id="@+id/btn_show_les_1"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="start"
+        android:text="@string/title_activity_activity_one"
+        android:textAlignment="textStart" />
+
+    <Button
+        android:id="@+id/btn_show_les_2"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:text="@string/title_activity_activity_two"
+        android:textAlignment="textStart" />
+
+    <Button
+        android:id="@+id/btn_show_les_3"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="start"
+        android:text="@string/title_activity_activity_three"
+        android:textAlignment="textStart" />
+
+    <Button
+        android:id="@+id/btn_show_les_4"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="start"
+        android:text="@string/title_activity_activity_four"
+        android:textAlignment="textStart" />
+
+    <Button
+        android:id="@+id/btn_show_les_5"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="start"
+        android:text="@string/title_activity_activity_five"
+        android:textAlignment="textStart" />
+</LinearLayout>

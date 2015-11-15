@@ -18,13 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
-            android:name=".ActivityTwo"
+            android:name=".FragmentLesson2"
             android:label="@string/title_activity_activity_two" >
         </activity>
         <activity
-            android:name=".ActivityOne"
-            android:label="@string/title_activity_activity_one"
+            android:name=".ShowLessonsActivity"
+            android:label="@string/app_name"
             android:parentActivityName=".MainActivity"
             android:theme="@style/AppTheme.NoActionBar" >
             <meta-data
@@ -32,18 +33,21 @@
                 android:value="com.aparnyuk.lessons_02.MainActivity" />
         </activity>
         <activity
-            android:name=".ActivityThree"
+            android:name=".FragmentLesson3"
             android:label="@string/title_activity_activity_three" >
         </activity>
+
         <activity
-            android:name=".ActivityFour"
+            android:name=".Lesson4.ActivityFour"
             android:label="@string/title_activity_activity_four" >
         </activity>
-        <activity android:name=".BaseActivity" >
+        <activity android:name=".Lesson4.BaseActivity" >
         </activity>
-        <activity android:name=".ActivityFive"
+
+        <activity android:name=".FragmentLesson5"
             android:label="@string/title_activity_activity_five">
         </activity>
+
     </application>
 
 </manifest>

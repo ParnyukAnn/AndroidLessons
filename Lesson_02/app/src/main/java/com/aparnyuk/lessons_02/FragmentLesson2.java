@@ -1,19 +1,19 @@
 package com.aparnyuk.lessons_02;
 
-import android.support.v7.app.AppCompatActivity;
+
+import android.support.annotation.Nullable;
+import android.support.v4.app.Fragment;
 import android.os.Bundle;
-import android.view.Gravity;
+import android.view.LayoutInflater;
 import android.view.View;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.math.BigInteger;
 
-public class ActivityTwo extends AppCompatActivity implements View.OnClickListener {
+public class FragmentLesson2 extends Fragment implements View.OnClickListener {
     TextView resFactorial;
     TextView resFibonacci;
     Button btnFactorial;
@@ -21,23 +21,27 @@ public class ActivityTwo extends AppCompatActivity implements View.OnClickListen
     EditText inputFactorial;
     EditText inputFibonacci;
 
+    @Nullable
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_two);
+    public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        return inflater.inflate(R.layout.fragment_lesson2, container, false);
+    }
+    @Override
+    public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
+        super.onViewCreated(view, savedInstanceState);
 
-        btnFactorial = (Button) findViewById(R.id.btnFact);
-        btnFibonacci = (Button) findViewById(R.id.btnFib);
-        inputFactorial = (EditText) findViewById(R.id.editFact);
-        inputFibonacci = (EditText) findViewById(R.id.editFib);
-        resFactorial = (TextView) findViewById(R.id.resFact);
-        resFibonacci = (TextView) findViewById(R.id.resFib);
+        btnFactorial = (Button) getActivity().findViewById(R.id.btnFact);
+        btnFibonacci = (Button) getActivity().findViewById(R.id.btnFib);
+        inputFactorial = (EditText) getActivity().findViewById(R.id.editFact);
+        inputFibonacci = (EditText) getActivity().findViewById(R.id.editFib);
+        resFactorial = (TextView) getActivity().findViewById(R.id.resFact);
+        resFibonacci = (TextView) getActivity().findViewById(R.id.resFib);
 
         btnFactorial.setOnClickListener(this);
         btnFibonacci.setOnClickListener(this);
 
     }
-// добавить try catch или проверка от неправильных результатов
+
 
     @Override
     public void onClick(View v) {

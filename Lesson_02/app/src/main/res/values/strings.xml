@@ -1,5 +1,6 @@
 <resources>
     <string name="app_name">Android lessons</string>
+    <string name="org_name">Geekhub</string>
     <string name="name_les_1">Lesson 1</string>
     <string name="name_les_2">Lesson 2</string>
     <string name="name_les_3">Lesson 3</string>
@@ -10,6 +11,7 @@
     <string name="title_activity_activity_three">Урок 3. Работа с коллекциями</string>
     <string name="title_activity_activity_four">Урок 4. ООП, фрагменты</string>
     <string name="title_activity_activity_five">Урок 5. UI, анимация</string>
+    <string name="title_activity_activity_six">Урок 6. Multiple Screens</string>
 
     <string name="calculate_operation">Вычислить</string>
     <string name="head_fib">Числа Фибоначчи</string>
@@ -34,12 +36,20 @@
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
 
-    <string name="name_item1">Урок 1</string>
-    <string name="name_item2">Урок 2</string>
-    <string name="name_item3">Урок 3</string>
-    <string name="name_item4">Урок 4</string>
-    <string name="name_item5">Урок 5</string>
-    <string name="name_item_title">Текущий урок</string>
+    <string name="name_item1">"Hello world!"</string>
+    <string name="name_item2">Factorial and Fibonaccy</string>
+    <string name="name_item3">Work with Collections</string>
+    <string name="name_item4">Interfaces,Fragments</string>
+    <string name="name_item5">UI, Animation</string>
+    <string name="name_item6">Multiple Screens</string>
+    <string name="name_item_title">Current lessons</string>
+
+    <string name="name_tool_item1">Lesson 1</string>
+    <string name="name_tool_item2">Lesson 2</string>
+    <string name="name_tool_item3">Lesson 3</string>
+    <string name="name_tool_item4">Lesson 4</string>
+    <string name="name_tool_item5">Lesson 5</string>
+    <string name="name_tool_item6">Lesson 6</string>
 
     <string name="anm_btn_blink">Blink</string>
     <string name="anm_btn_bounce">Bounce</string>
@@ -58,4 +68,6 @@
     <string name="anm_btn_cross_fade">Cross fade</string>
     <string name="anima_tv_text">Replace this Text View</string>
 
+    <string name="btn_change">Change</string>
+    <string name="tv_lesson_1"> This is the first lessons </string>
 </resources>

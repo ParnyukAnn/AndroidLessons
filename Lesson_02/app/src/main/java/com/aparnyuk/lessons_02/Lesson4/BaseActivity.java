@@ -1,7 +1,9 @@
-package com.aparnyuk.lessons_02;
+package com.aparnyuk.lessons_02.Lesson4;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+
+import com.aparnyuk.lessons_02.R;
 
 public abstract class BaseActivity extends AppCompatActivity {
 

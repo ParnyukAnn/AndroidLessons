@@ -1,8 +1,11 @@
-package com.aparnyuk.lessons_02;
+package com.aparnyuk.lessons_02.Lesson4;
 
 
 import android.os.Bundle;
 import android.support.v4.app.FragmentManager;
+import android.support.v7.widget.Toolbar;
+
+import com.aparnyuk.lessons_02.R;
 
 public class ActivityFour extends BaseActivity implements ShowSomething {
 
@@ -15,6 +18,10 @@ public class ActivityFour extends BaseActivity implements ShowSomething {
         super.onCreate(savedInstanceState);
         nextFrag = new NextFragment();
         prevFrag = new PreviousFragment();
+
+       // Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+       // setSupportActionBar(toolbar);
+       // getSupportActionBar().setDisplayHomeAsUpEnabled(true);
     }
 
     @Override
