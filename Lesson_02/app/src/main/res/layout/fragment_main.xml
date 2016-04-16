@@ -52,4 +52,13 @@
         android:gravity="start"
         android:text="@string/title_activity_activity_five"
         android:textAlignment="textStart" />
+    <Button
+        android:id="@+id/btn_show_les_6"
+        style="?android:borderlessButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:gravity="start"
+        android:text="@string/title_activity_activity_six"
+        android:textAlignment="textStart" />
 </LinearLayout>

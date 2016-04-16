@@ -1,9 +1,11 @@
 package com.aparnyuk.lessons_02;
 
 
+import android.app.Activity;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -21,14 +23,26 @@ public class FragmentLesson2 extends Fragment implements View.OnClickListener {
     EditText inputFactorial;
     EditText inputFibonacci;
 
+
+    final String LOG_TAG = "myLogs";
+
+
+    public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        Log.d(LOG_TAG, "Fragment2 onCreate");
+    }
+
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
+        Log.d(LOG_TAG, "Fragment2 onCreateView");
         return inflater.inflate(R.layout.fragment_lesson2, container, false);
     }
+
     @Override
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+        Log.d(LOG_TAG, "Fragment2 onViewCreated");
 
         btnFactorial = (Button) getActivity().findViewById(R.id.btnFact);
         btnFibonacci = (Button) getActivity().findViewById(R.id.btnFib);
@@ -39,7 +53,15 @@ public class FragmentLesson2 extends Fragment implements View.OnClickListener {
 
         btnFactorial.setOnClickListener(this);
         btnFibonacci.setOnClickListener(this);
-
+        /*
+try {
+    btnFactorial.setOnClickListener(this);
+    btnFibonacci.setOnClickListener(this);
+    Log.d(LOG_TAG, "Fragment1 onViewCreated 2");
+}catch (Exception e){
+    Log.d(LOG_TAG, "Error: "+e);
+}
+*/
     }
 
 
@@ -66,8 +88,8 @@ public class FragmentLesson2 extends Fragment implements View.OnClickListener {
             default:
                 break;
         }
-    }
 
+    }
     /*   public static long myFactorial(int n) {
            long fact = 1;
            for (int i = 1; i <= n; i++)

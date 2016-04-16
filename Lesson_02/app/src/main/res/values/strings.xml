@@ -69,5 +69,6 @@
     <string name="anima_tv_text">Replace this Text View</string>
 
     <string name="btn_change">Change</string>
+    <string name="mult_screen_text">This is multiple screen.</string>
     <string name="tv_lesson_1"> This is the first lessons </string>
 </resources>

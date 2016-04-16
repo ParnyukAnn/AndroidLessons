@@ -1,52 +1,44 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.aparnyuk.lessons_02" >
+    package="com.aparnyuk.lessons_02">
 
     <application
         android:allowBackup="true"
+        android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
+            android:configChanges="orientation|screenSize"
             android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".FragmentLesson2"
-            android:label="@string/title_activity_activity_two" >
-        </activity>
+
         <activity
             android:name=".ShowLessonsActivity"
             android:label="@string/app_name"
             android:parentActivityName=".MainActivity"
-            android:theme="@style/AppTheme.NoActionBar" >
+            android:theme="@style/AppTheme.NoActionBar">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.aparnyuk.lessons_02.MainActivity" />
         </activity>
         <activity
-            android:name=".FragmentLesson3"
-            android:label="@string/title_activity_activity_three" >
-        </activity>
-
-        <activity
             android:name=".Lesson4.ActivityFour"
-            android:label="@string/title_activity_activity_four" >
-        </activity>
-        <activity android:name=".Lesson4.BaseActivity" >
+            android:label="@string/title_activity_activity_four"
+            android:parentActivityName=".MainActivity">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.aparnyuk.lessons_02.MainActivity" />
         </activity>
 
-        <activity android:name=".FragmentLesson5"
-            android:label="@string/title_activity_activity_five">
-        </activity>
 
     </application>
 
